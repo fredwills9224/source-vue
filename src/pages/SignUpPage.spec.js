@@ -62,6 +62,13 @@ describe('Sign Up Page', ()=>{
             expect(button).toBeInTheDocument();
         
         });
+        it('has Sign Up button disabled attribute set a true', ()=>{
+
+            render(SignUpPage);
+            const button = screen.queryByRole('button', { name: 'Sign Up' });
+            expect(button).toBeDisabled();
+        
+        });
 
     });
     
