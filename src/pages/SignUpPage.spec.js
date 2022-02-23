@@ -20,6 +20,13 @@ describe('Sign Up Page', ()=>{
             expect(input).toBeInTheDocument();
 
         });
+        it('has email input', ()=>{
+
+            const { container } = render(SignUpPage);
+            const inputCount = container.querySelectorAll('input').length;
+            expect(inputCount).toBe(2);
+
+        });
 
     });
     
