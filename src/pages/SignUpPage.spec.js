@@ -16,14 +16,14 @@ describe('Sign Up Page', ()=>{
         it('has username input', ()=>{
 
             render(SignUpPage);
-            const input = screen.queryByPlaceholderText('username');
+            const input = screen.queryByLabelText('Username');
             expect(input).toBeInTheDocument();
 
         });
         it('has email input', ()=>{
 
             render(SignUpPage);
-            const input = screen.queryByPlaceholderText('e-mail');
+            const input = screen.queryByLabelText('E-mail');
             expect(input).toBeInTheDocument();
 
         });
