@@ -48,7 +48,7 @@ describe('Sign Up Page', ()=>{
             expect(input).toBeInTheDocument();
 
         });
-            it('has password type for password repeat input', ()=>{
+        it('has password type for password repeat input', ()=>{
 
             render(SignUpPage);
             const input = screen.queryByLabelText('Password Repeat');
