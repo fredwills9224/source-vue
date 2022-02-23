@@ -1,5 +1,5 @@
 <template>
     <h1>Sign Up</h1>
-    <input/>
-    <input/>
+    <input placeholder="username"/>
+    <input placeholder="e-mail"/>
 </template>
