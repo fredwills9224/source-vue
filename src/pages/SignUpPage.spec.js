@@ -2,11 +2,25 @@ import SignUpPage from './SignUpPage.vue';
 import { render, screen } from '@testing-library/vue';
 import '@testing-library/jest-dom';
 
+describe('Sign Up Page', ()=>{
 
-it('has Sign Up Header', ()=>{
+    describe('Layout', ()=>{
 
-    render(SignUpPage);
-    const header = screen.queryByRole('heading', { name: 'Sign Up' });
-    expect(header).toBeInTheDocument();
+        it('has Sign Up Header', ()=>{
 
+            render(SignUpPage);
+            const header = screen.queryByRole('heading', { name: 'Sign Up' });
+            expect(header).toBeInTheDocument();
+        
+        });
+        it('has username input', ()=>{
+
+            const { container } = render(SignUpPage);
+            const input = container.querySelector('input');
+            expect(input).toBeInTheDocument();
+
+        });
+
+    });
+    
 });
