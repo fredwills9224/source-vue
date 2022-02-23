@@ -11,6 +11,6 @@
     <label for="password-repeat">Password Repeat</label>
     <input id="password-repeat" type="password"/>
 
-    <button>Sign Up</button>
+    <button disabled>Sign Up</button>
 
 </template>
